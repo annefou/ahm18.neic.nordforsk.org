@@ -42,6 +42,7 @@
                     {% for crossteam in site.crossteams %}
                     <!-- hack to not print the subpages here -->
 		    {% if crossteam.name == "details" %}
+		    {% elsif crossteam.name == "speed-blogging" %}
 		    {% else %}
                         {% assign crossteam_index = forloop.index %}
                         <tr id="highlight-{{ crossteam_index }}" class="{[ get_class('none', '{{ crossteam_index }}') ]}">
@@ -52,7 +53,7 @@
                                     <div class="hover_area">
 					  {% if crossteam.ho_details%}
 					  <h3 style="display: inline;">{{ crossteam.ho_organizers }}: <a href="{{ site.baseurl }}/{{ crossteam.ho_details }}">{{crossteam.ho_title}}</a></h3>
-
+                      {% elsif crossteam.sb_details%}
 					  {% else %}
 					  <h3 style="display: inline;">{{ crossteam.ho_organizers }}: {{ crossteam.ho_title }}</h3>
 					  {% endif %}
@@ -86,6 +87,7 @@
                     {% for crossteam in site.crossteams %}
                     <!-- hack to not print the subpages here -->
 		    {% if crossteam.name == "details" %}
+		    {% elsif crossteam.name == "hands-on" %}
 		    {% else %}
                         {% assign crossteam_index = forloop.index %}
                         <tr id="highlight-{{ crossteam_index }}" class="{[ get_class('none', '{{ crossteam_index }}') ]}">
@@ -97,6 +99,7 @@
 					  {% if crossteam.sb_details%}
 					  <h3 style="display: inline;">{{ crossteam.sb_organizers }}: <a href="{{ site.baseurl }}/{{ crossteam.sb_details }}">{{crossteam.sb_title}}</a></h3>
 
+					  {% elsif crossteam.ho_details%}
 					  {% else %}
 					  <h3 style="display: inline;">{{ crossteam.sb_organizers }}: {{ crossteam.sb_title }}</h3>
 					  {% endif %}
