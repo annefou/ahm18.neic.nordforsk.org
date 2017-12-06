@@ -36,40 +36,22 @@
         <br>
         Each project has been asked to submit at least one topic for a short hand-on/demo/show me your tools session. All projects have responded and thanks to their feedback and internal discussions we have converged to the following topics:
 
-        <div class="table-responsive">
-            <table class="table table-hover">
-                <tbody>
+				<ol>
                     {% for crossteam in site.crossteams %}
                     <!-- hack to not print the subpages here -->
 		    {% if crossteam.name == "details" %}
 		    {% elsif crossteam.name == "speed-blogging" %}
 		    {% else %}
                         {% assign crossteam_index = forloop.index %}
-                        <tr id="highlight-{{ crossteam_index }}" class="{[ get_class('none', '{{ crossteam_index }}') ]}">
-                            <td>
-                                <br>
-				<div class="hover_area">
-                                    <a class="anchor" id="{{ crossteam_index }}"></a>
-                                    <div class="hover_area">
 					  {% if crossteam.ho_details%}
-					  <h3 style="display: inline;">{{ crossteam.ho_organizers }}: <a href="{{ site.baseurl }}/{{ crossteam.ho_details }}">{{crossteam.ho_title}}</a></h3>
-                      {% elsif crossteam.sb_details%}
-					  {% else %}
-					  <h3 style="display: inline;">{{ crossteam.ho_organizers }}: {{ crossteam.ho_title }}</h3>
+					  <li>{{ crossteam.ho_organizers }}: <a href="{{ site.baseurl }}/{{ crossteam.ho_details }}"><b>{{crossteam.ho_title}}</b></a></li>
 					  {% endif %}
-                                        </div>
-				    <p>
-                                        {{ crossteam.content | markdownify }}
-                                    </p>
-                                </div>
-				
-                            </td>
-                        </tr>
+					<ul>
+                                   <li>     {{ crossteam.content | markdownify }}</li>
+					</ul>
 			{% endif %}
                     {% endfor %}
-                </tbody>
-            </table>
-        </div>
+				</ol>
     </div>
 </div>
 
@@ -81,41 +63,23 @@
 
      While we discussed and shared our sucess stories in the previous session, here we will discuss future perspectives on:
 
-        <div class="table-responsive">
-            <table class="table table-hover">
-                <tbody>
+                <ol>
                     {% for crossteam in site.crossteams %}
                     <!-- hack to not print the subpages here -->
 		    {% if crossteam.name == "details" %}
 		    {% elsif crossteam.name == "hands-on" %}
 		    {% else %}
                         {% assign crossteam_index = forloop.index %}
-                        <tr id="highlight-{{ crossteam_index }}" class="{[ get_class('none', '{{ crossteam_index }}') ]}">
-                            <td>
-                                <br>
-				<div class="hover_area">
-                                    <a class="anchor" id="{{ crossteam_index }}"></a>
-                                    <div class="hover_area">
 					  {% if crossteam.sb_details%}
-					  <h3 style="display: inline;">{{ crossteam.sb_organizers }}: <a href="{{ site.baseurl }}/{{ crossteam.sb_details }}">{{crossteam.sb_title}}</a></h3>
-
-					  {% elsif crossteam.ho_details%}
-					  {% else %}
-					  <h3 style="display: inline;">{{ crossteam.sb_organizers }}: {{ crossteam.sb_title }}</h3>
+					  <li>{{ crossteam.sb_organizers }}: <a href="{{ site.baseurl }}/{{ crossteam.sb_details }}"><b>{{crossteam.sb_title}}</b></a></li>
 					  {% endif %}
-                                        </div>
-				    <p>
-                                        {{ crossteam.content | markdownify }}
-                                    </p>
-                                </div>
-				
-                            </td>
-                        </tr>
+				                <ul>
+                                      <li>  {{ crossteam.content | markdownify }} </li>
+                                </ul>
 			{% endif %}
                     {% endfor %}
-                </tbody>
-            </table>
-        </div>
+					</ul>
+                </ol>
 		
 
       The following guidance is given to help you for this session:
