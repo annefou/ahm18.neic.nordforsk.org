@@ -35,7 +35,7 @@
 		We all successfully met a technological or methodological challenge in our project and this session is about sharing our success and knowledge with other NeIC projects.
         <br>
         Each project has been asked to submit at least one topic for a short hand-on/demo/show me your tools session. All projects have responded and thanks to their feedback and internal discussions we have converged to the following topics:
-
+        <p>
 				<ol>
                     {% for crossteam in site.crossteams %}
                     <!-- hack to not print the subpages here -->
@@ -43,8 +43,8 @@
 		    {% elsif crossteam.name == "speed-blogging" %}
 		    {% else %}
                         {% assign crossteam_index = forloop.index %}
-					  {% if crossteam.ho_details%}
-					  <li>{{ crossteam.ho_organizers }}: <a href="{{ site.baseurl }}/{{ crossteam.ho_details }}"><b>{{crossteam.ho_title}}</b></a></li>
+					  {% if crossteam.details%}
+					  <li>{{ crossteam.organizers }}: <a href="{{ site.baseurl }}/{{ crossteam.details }}"><b>{{crossteam.title}}</b></a></li>
 					  {% endif %}
 					<ul>
                                    <li>     {{ crossteam.content | markdownify }}</li>
@@ -52,6 +52,7 @@
 			{% endif %}
                     {% endfor %}
 				</ol>
+		</p>
     </div>
 </div>
 
@@ -62,6 +63,7 @@
      During this session we are going to discuss and write blogs. Like in the previous session, you have been asked to choose speed-blogging topics (by order of preference) at registration time. You will be at most 5 people per topic.
 
      While we discussed and shared our sucess stories in the previous session, here we will discuss future perspectives on:
+	 <p>
 
                 <ol>
                     {% for crossteam in site.crossteams %}
@@ -70,8 +72,8 @@
 		    {% elsif crossteam.name == "hands-on" %}
 		    {% else %}
                         {% assign crossteam_index = forloop.index %}
-					  {% if crossteam.sb_details%}
-					  <li>{{ crossteam.sb_organizers }}: <a href="{{ site.baseurl }}/{{ crossteam.sb_details }}"><b>{{crossteam.sb_title}}</b></a></li>
+					  {% if crossteam.details%}
+					  <li>{{ crossteam.organizers }}: <a href="{{ site.baseurl }}/{{ crossteam.details }}"><b>{{crossteam.title}}</b></a></li>
 					  {% endif %}
 				                <ul>
                                       <li>  {{ crossteam.content | markdownify }} </li>
@@ -81,7 +83,7 @@
 					</ul>
                 </ol>
 		
-
+     </p>
       The following guidance is given to help you for this session:
 	  <ul>
         <li>Take about 1 hour to discuss about the topic chosen in your team.</li>
@@ -93,11 +95,11 @@
       a look at the following <a href="https://www.software.ac.uk/tags/speed-blog-posts">Speed blog</a> posts:
 	  <ul>
       <li> <a href="https://www.software.ac.uk/blog/2017-06-01-improving-diversity-research-software-projects-and-events">Improving diversity in research software projects and events</a>
-      <li> Constructive code critique</a>https://www.software.ac.uk/blog/2017-05-11-constructive-code-critique
-      <li> Making data open: resources, gaps and incentives</a>https://www.software.ac.uk/blog/2017-05-24-making-data-open-resources-gaps-and-incentives
-      <li> Privacy and Trust issues in IoT and Open Data</a>https://www.software.ac.uk/blog/2017-05-29-privacy-and-trust-issues-iot-and-open-data
-      <li> Decisions decisions decisions: Things to be aware of when choosing your research software stack</a>https://www.software.ac.uk/blog/2017-05-11-decisions-decisions-decisions-things-be-aware-when-choosing-your-research-software
-      <li> Software Metrics—why and how?</a>https://www.software.ac.uk/blog/2017-05-09-software-metrics-why-and-how
+      <li> <a href="https://www.software.ac.uk/blog/2017-05-11-constructive-code-critique">Constructive code critique</a>
+      <li> <a href="https://www.software.ac.uk/blog/2017-05-24-making-data-open-resources-gaps-and-incentives">Making data open: resources, gaps and incentives</a>
+      <li> <a href="https://www.software.ac.uk/blog/2017-05-29-privacy-and-trust-issues-iot-and-open-data">Privacy and Trust issues in IoT and Open Data</a>
+      <li> <a href="https://www.software.ac.uk/blog/2017-05-11-decisions-decisions-decisions-things-be-aware-when-choosing-your-research-software">Decisions decisions decisions: Things to be aware of when choosing your research software stack</a>
+      <li> <a href="https://www.software.ac.uk/blog/2017-05-09-software-metrics-why-and-how">Software Metrics—why and how?</a>
       </ul>
 
 

@@ -1,7 +1,7 @@
 ---
-sb_organizers: TDB 
-sb_title: What does the future hold for data mining?
-sb_details: /crossteams/sb_details7/
+organizers: TDB 
+title: What does the future hold for data mining?
+details: /crossteams/sb_details7/
 name: speed-blogging
 ---
 
