@@ -1,9 +1,9 @@
 ---
 layout: master
 include: default
-permalink: /crossteams/details1/
+permalink: /crossteams/sb_details1/
 name: details
 ---
 
-<h3> TDB: version control and co-editing</h3>
+<h3> TDB: </h3>
 Detailed instructions ...

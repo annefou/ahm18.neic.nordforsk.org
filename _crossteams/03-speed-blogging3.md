@@ -1,7 +1,7 @@
 ---
-sb-organizers: TDB 
-sb-title: How can we bootstrap and manage projects in a light way?
-details: /crossteams/spdetails3/
+sb_organizers: TDB 
+sb_title: How can we bootstrap and manage projects in a light way?
+sb_details: /crossteams/sb_details3/
 ---
 
 TDB

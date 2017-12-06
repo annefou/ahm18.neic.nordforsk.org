@@ -1,7 +1,7 @@
 ---
 layout: master
 include: default
-permalink: /crossteams/details2/
+permalink: /crossteams/ho_details2/
 name: details
 ---
 

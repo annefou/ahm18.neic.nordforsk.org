@@ -1,7 +1,7 @@
 ---
 layout: master
 include: default
-permalink: /crossteams/sbdetails7/
+permalink: /crossteams/sb_details2/
 name: details
 ---
 
